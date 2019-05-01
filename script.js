@@ -105,7 +105,6 @@ Elevator.prototype.assignJob = function (direction, floor) {
             this.idleFloor = floor;
             this.direction = 0; 
             this.statusDisplay();
-            var destination = prompt('Enter Destination Floor');
         }.bind(this), 1000 * Math.abs(floor - this.idleFloor) );
 }}
 Elevator.prototype.isEligible = function (direction, floor) {
